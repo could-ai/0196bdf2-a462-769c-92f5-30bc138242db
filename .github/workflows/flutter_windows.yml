@@ -39,7 +39,7 @@ jobs:
           Compress-Archive -Path ./usr/build/windows/runner/Release/* -DestinationPath windows-app.zip
 
       - name: Upload build artifacts
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: windows-release-build
           path: windows-app.zip
