@@ -44,7 +44,7 @@ jobs:
           tar -czf linux-app.tar.gz -C ./usr/build/linux/x64/release/bundle .
 
       - name: Upload build artifacts
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: linux-release-build
           path: linux-app.tar.gz
