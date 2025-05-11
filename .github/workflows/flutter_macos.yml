@@ -41,7 +41,7 @@ jobs:
           zip -r macos-app.zip *.app
 
       - name: Upload build artifacts
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: macos-release-build
           path: ./usr/build/macos/Build/Products/Release/macos-app.zip
